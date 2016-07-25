@@ -71,6 +71,13 @@ footer .container{
    
 }
 
+.menu-opcoes a:hover{
+    color: #007dc6;
+}
+.menu-opcoes a:active{
+    color: #867dc6;
+}
+
 body {
   color: #333333;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -119,6 +126,22 @@ body {
     text-decoration: none;
 }
 
+/*Sublista é escondida como default*/
+.menu-departamentos li ul{
+    display: none;
+}
+/*Apresenta a lista, ao passar o mouse*/
+.menu-departamentos li:hover ul{
+    display:block;
+}
+/*Cor do fundo da sublista*/
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+/*Coloca - antes das listas para diferenciação*/
+.menu-departamentos li li a:before{
+    content: '- ';
+}
 .busca input{
     vertical-align:middle;
 }
@@ -167,4 +190,3 @@ body {
     float: right;
     background-color: #dcdcf5;
 }
-
